@@ -1,0 +1,214 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+
+li {
+    list-style: none;
+}
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+
+body {
+    font: normal 14px arial, Helvetica, sans-serif;
+}
+/* Code Starts */
+    /* Common Styles */
+	*, ul, li {
+		padding: 0;
+		margin: 0;
+		font-family: arial;
+	}
+	li {
+		list-style: none;
+	}
+	.container {
+	width: 97%;
+	padding:3%;
+	box-sizing: border-box;
+	}
+
+  	/* Dot Line Graph */
+	.dotLineBlock {
+		border-bottom: 1px solid #000;
+		position: relative;
+	}
+	.dotLineValues {
+		width: 100%;
+		border-left: 1px solid #000;
+		max-height: 500px;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+	}
+	.dotLineValues li {
+		height: 50px;
+		position: relative;
+		border-top: 1px dotted #b40000;
+	}
+	.dotLineValues li:before, .dotLineValues li:after {
+		content:"";
+		position: absolute;
+		height: 2px;
+		margin-top: -1px;
+		color: #000;
+		border-top: 1px solid #000;
+	}
+	.dotLineValues li:before {
+		width: 20px;
+		left: -10px;
+		top: 0px;
+	}
+	.dotLineValues li:after {
+		width: 10px;
+		left: 0;
+		top: 25px;
+	}
+
+	.graphBlock {
+		width: 100%;
+		display: inline-block;
+		vertical-align: bottom;
+		height: 500px;
+		padding-left: 40px;
+	}
+	.graphBlock ul {
+		height: 100%;
+	}
+	.graphBlock li {
+		width: 25px;
+		display: inline-block;
+		position: relative;
+		height: 100%;
+		/* overflow: hidden;
+		border: 1px solid #000;
+		margin-right: 5px; */
+	}
+
+	.graphBlock li:before {
+		content: '';
+		width: 2px;
+		height: 100%;
+		border-left: 1px dotted #b40000;
+		position: absolute;
+		bottom: 0;
+		left: 2px;
+	}
+
+	.graphBlock li span {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 25px;
+		height: 100%;
+    margin-bottom: -6px;
+	}
+	.graphBlock .knownWell:before, .graphBlock .knownWell:after, .graphBlock .known:before, .graphBlock .known:after {
+		content: '';
+		position: absolute;
+	}
+	.graphBlock .knownWell:before, .graphBlock .known:before {
+		border:6px solid #b40000;
+		left: 0;
+		border-radius: 50%;
+		bottom: 0;
+    margin: 0 0 -3px -3px;
+	}
+	.graphBlock .knownWell:after, .graphBlock .known:after {
+		border-left: 2px solid #b40000;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		margin-left: 2px;
+		bottom: 0;
+	}
+	.graphBlock .known:before {
+		border-color:rgba(190,0,0,0.5);
+	}
+	.graphBlock .known:after {
+		border-color:rgba(190,0,0,0.5);
+	}
+	/* .nodata .known {
+		bottom: 0;
+	}
+	.nodata .knownWell {
+		bottom: 0;
+	}
+	.nodata .knownWell:after {
+		transform: skewY(20deg);
+	} */
+	.firstBlock .known {
+		bottom: 80%;
+    height:20%;
+	}
+	.firstBlock .knownWell {
+		bottom: 70%;
+    height: 30%;
+	}
+	.secondBlock .known {
+		bottom: 55%;
+    height: 45%;
+	}
+	.secondBlock .knownWell {
+		bottom: 50%;
+    height: 50%;
+	}
+	.thirdBlock .known {
+		bottom: 95%;
+    height:5%;
+	}
+	.thirdBlock .knownWell {
+		bottom: 90%;
+    height: 10%;
+	}
+	.fourthBlock .known {
+		bottom: 75%;
+    height: 25%;
+	}
+	.fourthBlock .knownWell {
+		bottom: 65%;
+    height: 35%;
+	}
+
+	.firstBlock .knownWell:after {
+		transform: skewX(15deg);
+		bottom: -100px;
+		height: 100px;
+		left: 15px;
+	}
+	.firstBlock .known:after {
+		transform: skewX(12deg);
+    bottom: -125px;
+    height: 125px;
+    left: 15px;
+	}
+
+	.secondBlock .knownWell:after {
+	  transform: skewX(-8deg);
+    height: 200px;
+    left: 14px;
+	}
+	.secondBlock .known:after {
+		transform: skewX(-8deg);
+    height: 200px;
+    left: 14px;
+	}
+
+	.thirdBlock .knownWell:after {
+		transform: skewX(13deg);
+		height: 125px;
+		left: 14px;
+		bottom: -125px;
+	}
+	.thirdBlock .known:after {
+		transform: skewX(13deg);
+		height: 100px;
+		left: 14px;
+		bottom: -100px;
+	}
+
+	.fourthBlock .knownWell:after {
+		display: none;
+	}
+	.fourthBlock .known:after {
+		display: none;
+	}
+/* Code Ends */

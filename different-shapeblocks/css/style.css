@@ -1,0 +1,92 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+
+li {
+    list-style: none;
+}
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+
+body {
+    font: normal 14px arial, Helvetica, sans-serif;
+}
+/* Code Starts */
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: arial;
+    }
+    li {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: #FFF;
+    }
+    /* Text Block */
+    .infoBlock ul {
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid #ccc;
+        height: 300px;
+        width: 300px;
+        overflow: hidden;
+    }
+    .infoBlock ul li {
+        float: left;
+        width: 148px;
+        height: 148px;
+        border:1px solid #ccc;
+    }
+    .infoBlock ul li a {
+        line-height: 150px;
+        display: block;
+    }
+    .block1 {
+        background: #C0B283;
+    }
+    .block2 {
+        background: #96858F;
+    }
+    .block3 {
+        background: #6D7993;
+    }
+    .block4 {
+        background: #333A56;
+    }
+    /* Circle Block */
+    .infoBlock ul.circle {
+        border-radius: 50%;
+        overflow: hidden;
+    }
+    .infoBlock ul.circle .block1 {
+        border-top-left-radius: 100%;
+    }
+    .infoBlock ul.circle .block1 a {
+        margin:10px 0 0 30px;
+    }
+    .infoBlock ul.circle .block2 a {
+        margin:10px 30px 0 0;
+    }
+    .infoBlock ul.circle .block3 a {
+        margin:-10px 0 0 30px;
+    }
+    .infoBlock ul.circle .block4 a {
+        margin:-10px 30px 0 0;
+    }
+    .infoBlock ul.circle .block2 {
+        border-top-right-radius: 100%;
+    }
+    .infoBlock ul.circle .block3 {
+        border-bottom-left-radius: 100%;
+    }
+    .infoBlock ul.circle .block4 {
+        border-bottom-right-radius: 100%;
+    }
+    /* Diamond */
+    .infoBlock ul.diamond {
+        transform: rotate(45deg);
+        margin: 100px;
+    }
+    .infoBlock ul.diamond li a {
+        transform: rotate(-45deg);
+    }
+/* Code Ends */

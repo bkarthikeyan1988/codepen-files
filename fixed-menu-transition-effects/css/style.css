@@ -1,0 +1,141 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+
+li {
+    list-style: none;
+}
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+
+body {
+    font: normal 14px arial, Helvetica, sans-serif;
+}
+/* Code Starts */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    /* Transition Container */
+    /* Transition */
+    .themeBlock {
+        overflow: hidden;
+    }
+    .themeBlock .themeBtnBlock {
+        position: relative;
+        overflow: hidden;
+        width: 136px;
+        transition: margin 0.3s ease-in-out;
+        text-align: center;
+    }
+    .themeBtn {
+        float: right;
+        display: block;
+        border: 1px solid #ccc;
+        width: 30px;
+        height: 32px;
+        line-height: 20px;
+        background: none;
+        overflow: hidden;
+    }
+    .themeBtn span {
+        width: 9.33px;
+        height: 30px;
+        float: left;
+    }
+    .themeBlock .red {
+        background: red;
+    }
+    .themeBlock .green {
+        background: green;
+    }
+    .themeBlock .blue {
+        background: blue;
+    }
+    .themeList  {
+        float: left;
+    }
+    .themeList li {
+        display: inline-block;
+        border: 1px solid #ccc;
+        width: 30px;
+        height: 30px;
+        line-height: 20px;
+        vertical-align: middle;
+    }
+    .themeList li a {
+        font-size: 0;
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    /* Top Transition */
+    .themeBlock .top .themeBtnBlock {
+        width: 30px;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /* optional */
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+        margin-top: -98px;
+    }
+    .themeBlock .top .themeBtnBlock:hover {
+        margin-top: 0;
+    }
+    .themeBlock .top .themeBtnBlock .themeBtn {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+    }
+    .themeBlock .top .themeBtnBlock .themeList {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+    }
+    
+    .themeBlock .top .themeBtnBlock .themeBtn {
+        height: 30px;
+    }
+    
+    .themeBlock .top .themeBtnBlock .themeBtn span {
+        height: 9.33px;
+        width: 30px;
+        display: block;
+        float: none;
+    }
+    /* Left Transition */
+    .themeBlock .left .themeBtnBlock{
+        margin-left: -104px;
+    }
+    .themeBlock .left .themeBtnBlock:hover {
+        margin-left: 0;
+    }
+    /* Right Transition */
+    .themeBlock .right {
+        float: right;
+    }
+    .themeBlock .right .themeBtnBlock{
+        margin-right: -104px;
+    }
+    .themeBlock .right .themeBtnBlock:hover{
+        margin-right: 0;
+    }
+    .themeBlock .right .themeBtn {
+        float: left;
+    }
+    .themeBlock .right .themeList {
+        float: left;
+    }
+/* Code Ends */

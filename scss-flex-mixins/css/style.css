@@ -1,0 +1,42 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+li {
+  list-style: none; }
+
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+body {
+  font: normal 14px arial, Helvetica, sans-serif; }
+
+/* Code Starts */
+/* Code Ends */
+.container ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.container ul li {
+  padding: 10px; }
+
+li.list3 {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -moz-order: 2;
+  -ms-flex-order: 2;
+  order: 2; }
+
+li.list1 {
+  -webkit-box-ordinal-group: 4;
+  -webkit-order: 3;
+  -moz-order: 3;
+  -ms-flex-order: 3;
+  order: 3; }
+
+li.list3 {
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+  -moz-order: 2;
+  -ms-flex-order: 2;
+  order: 2; }
+
+/*# sourceMappingURL=style.css.map */

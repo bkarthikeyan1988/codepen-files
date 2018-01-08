@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VUE JS Learnings</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <!-- Code Starts -->
+    <div id="app">
+        <input type="text" v-on:input="changeTitle">
+        <p>{{ title }}</p>
+        <p v-once>{{ title }}</p>
+        <p>{{ changeText() }}</p>
+        <p><a v-bind:href="link" target="_blank">Google</a></p>
+        <p v-html="rawHTML"></p>
+        <button v-on:click="increase">Click Me</button>
+        <button v-on:click="increaseDouble(2, $event)">Click Me</button>
+        <button v-on:click="counter++">Click Me</button>
+        <p>Click Count {{ counter }}</p>
+        <p>Click Count {{ counter > 10 ? ' counter greater than 10' : 'counter less than 10'}}</p>
+    </div>
+    <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"></script>
+    <script src="js/default.js"></script>
+    <!-- Code Ends -->
+</body>
+</html>

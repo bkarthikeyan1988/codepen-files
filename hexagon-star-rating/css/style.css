@@ -1,0 +1,97 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+
+li {
+    list-style: none;
+}
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+
+body {
+    font: normal 14px arial, Helvetica, sans-serif;
+}
+/* Code Starts */
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        list-style: none;
+    }
+    /* Hexagon Rating */
+    .hexagonRating {
+        position: relative;
+        display: inline-block;
+    }
+    .normalHexagonList li, .filledHexagonList li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 1px;
+    }
+    .normalHexagon, .filledHexagon {
+        width: 20px;
+        height: 10px;
+        background: #CCC;
+        position: relative;
+        margin: 10px auto;
+    }
+    
+    .normalHexagon:before, .filledHexagon:before {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: -5px;
+        left: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 5px solid #CCC;
+    }
+    
+    .normalHexagon:after, .filledHexagon:after {
+        content: "";
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 5px solid #CCC;
+    }
+    
+    .filledHexagon {
+        background: #C00;
+    }
+    
+    .filledHexagon:before {
+        border-bottom-color: #C00;
+    }
+    
+    .filledHexagon:after {
+        border-top-color: #C00;
+    }
+    
+    .filledHexagonList {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 1;
+        white-space: nowrap;
+    }
+    
+    .firstValue .filledHexagonList {
+        width: 48%;
+    }
+
+    .secondValue .filledHexagonList {
+        width: 55%;
+    }
+
+    .thirdValue .filledHexagonList {
+        width: 80%;
+    }
+    
+    .fourthValue .filledHexagonList {
+        width: 90%;
+    }
+/* Code Ends */

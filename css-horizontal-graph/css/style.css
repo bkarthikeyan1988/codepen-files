@@ -1,0 +1,143 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+
+li {
+    list-style: none;
+}
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+
+body {
+    font: normal 14px arial, Helvetica, sans-serif;
+}
+/* Code Starts */
+   /* Common Styles */
+	*, ul, li { 
+		padding: 0;
+		margin: 0;
+		font-family: arial;
+	}
+	li {
+		list-style: none;
+	}
+	.container {
+	width: 97%;
+	padding:3%;
+	box-sizing: border-box;
+	}
+	/* Horizontal */
+	.horizGraph {
+	position: relative;
+		max-width: 500px;
+	}
+	.horizontal {
+	padding-bottom: 15px;
+	}
+	.horizontal li {
+		border:1px solid #ccc;
+	border-left: 0;
+		height: 30px;
+		line-height: 30px;
+		width: 100%;
+		margin-bottom: 15px;
+		position: relative;
+	}
+
+	.horizontal li .text {
+		position: relative;
+		z-index: 3;
+	color: #fff;
+	padding-left: 10px;
+	}
+
+	.horizontal li .knownWell, .horizontal li .known {
+		height: 30px;
+		line-height: 30px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		text-align: right;
+	}
+	.horizontal li .knownWell {
+		width: 98%;
+		background: #006c7c;
+		z-index: 1;
+	}
+	.horizontal li .known {
+		width: 95%;
+		background: rgba(0,108,24,0.5);
+		z-index: 2;
+	color: #fff;
+	}
+	.horizontal li.test1 .knownWell {
+		width: 70%;
+	}
+	.horizontal li.test1 .known {
+		width: 80%;
+	}
+	.horizontal li.test2 .knownWell {
+		width: 50%;
+	}
+	.horizontal li.test2 .known {
+		width: 55%;
+	}
+	.horizontal li.test2 .knownWell {
+		width: 50%;
+	}
+	.horizontal li.test2 .known {
+		width: 55%;
+	}
+	.horizontal li.test3 .knownWell {
+		width: 90%;
+	}
+	.horizontal li.test3 .known {
+		width: 95%;
+	}
+	.horzLine {
+		border-bottom: 1px solid #000;
+		width: 100%;
+		text-align: right;
+		position:absolute;
+		bottom: 0;
+		left: 0;
+		height: 100%;
+	}
+	.horzLine li {
+		width: 10%;
+    	float: left;
+		position: relative;
+    	height: 100%;
+	}
+	.horzLine li span {
+	border-right: 1px dotted #006c7c;
+	display: inline-block;
+	height: 100%;
+	vertical-align: bottom;
+	position:relative;
+	font-size: 10px;
+	padding: 3px 3px 0 0;
+	z-index: 10;
+	}
+	.horzLine li span label {
+	position: absolute;
+	bottom: -10px;
+	left: -18px;
+	width: 18px;
+	}
+	.horzLine li:before, .horzLine li:after {
+		content:"";
+		position: absolute;
+		width: 2px;
+		margin-left: -1px;
+		color: #000;
+		border-right: 1px solid #000;
+	}
+	.horzLine li:before {
+		height: 20px;
+		bottom: -10px;
+		right: 0px;
+	}
+	.horzLine li:after {
+		height: 10px;
+		bottom: 0;
+		left: 50%;
+	}
+/* Code Ends */
