@@ -1,0 +1,27 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+
+li {
+    list-style: none;
+}
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+
+body {
+    font: normal 14px arial, Helvetica, sans-serif;
+}
+/* Code Starts */
+.loader {
+    background: rgba(0,0,0,0.5);  
+  }
+  /*
+    Set the color of the icon
+  */
+  svg path,
+  svg rect{
+    fill: #FF6700;
+  }
+  
+  .loader svg path,
+  .loader svg rect{
+    fill: #0F0;
+  }  
+/* Code Ends */
