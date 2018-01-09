@@ -1,0 +1,98 @@
+/* Have to Add other reset styles like *, a, ul > margin, padding */
+
+li {
+    list-style: none;
+}
+/* Not added the other reset styles for good viewing purpose and unwanted lines */
+
+body {
+    font: normal 14px arial, Helvetica, sans-serif;
+}
+/* Code Starts */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font: normal 14px arial;
+  margin: 25px 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Menu Starts */
+.element {
+  width: 100%;
+  -webkit-animation: scrollAnimation 5s linear 1 alternate;
+          animation: scrollAnimation 5s linear 1 alternate;
+}
+.element ul {
+  display: table;
+  table-layout: fixed;
+}
+.element ul li {
+  display: table-cell;
+  padding: 0 15px;
+  width: auto;
+  white-space: nowrap;
+}
+.element ul li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.element::-webkit-scrollbar {
+  width: 0 !important;
+  display: none;
+}
+
+.element {
+  -ms-overflow-style: none;
+}
+
+.element {
+  overflow: -moz-scrollbars-none;
+}
+
+.element:active {
+  pointer-events: none;
+}
+
+/* Animation Code */
+@-webkit-keyframes scrollAnimation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-150px, 0);
+            transform: translate(-150px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+@keyframes scrollAnimation {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  50% {
+    -webkit-transform: translate(-150px, 0);
+            transform: translate(-150px, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+/* Code Ends */
