@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <title>Modal HTML5 Forms</title>
+
+        <link rel="stylesheet" href="css/style.css" />
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- Code Starts -->
+        <main>
+            <section class="form-main-container">
+                <article>
+                    <h2 class="title">HTML5 Form</h2>
+                    <form id="html5Form">
+                        <ul class="html5-form">
+                            <li>
+                                <label for="email">Email:</label>
+                                <span><input id="email" class="input-field" type="email" placeholder="Enter the Email" required autofocus autocomplete="off" /></span>
+                            </li>
+                            <li>
+                                <label for="password">Password:</label>
+                                <span><input id="password" class="input-field" type="password" placeholder="Enter the Password" minlength=6 required /></span>
+                            </li>
+                            <li>
+                                <label for="url">URL:</label>
+                                <span><input id="url" class="input-field" type="url" placeholder="Enter the URL" required /></span>
+                            </li>
+                            <li>
+                                <label for="completion-date">Project Completion Date:</label>
+                                <span><input id="completion-date" class="input-field" type="date" required /></span>
+                            </li>
+                            <li>
+                                <label for="month">Current Month</label>
+                                <span><input type="month" class="input-field" id="month" name="month" required /></span>
+                            </li>
+                            <li>
+                                <label for="week">Current Week</label>
+                                <span><input type="week" class="input-field" id="week" required /></span>
+                            </li>
+                            <li>
+                                <label for="time">Current Time</label>
+                                <span><input id="time" class="input-field" type="time" required /></span>
+                            </li>
+                            <li>
+                                <label for="colorpicker">Select Color</label>
+                                <span><input type="color" name="color" id="colorpicker" value="#008080"> <strong id="hexcolor">#008080</strong></span>
+                            </li>
+                            <li>
+                                <label for="range">Age</label>
+                                <span><input type="range" id="range" name="range" value="18" required><strong for="range" id="output"></strong></span>
+                            </li>
+                            <li>
+                                <label for="hobbies">Hobbies</label>
+                                <span>
+                                    <input type="text" name="hobbiesList" placeholder="Hobbies" required id="hobbies" class="input-field" list="hobbies-list">
+                                     <datalist id="hobbies-list">
+                                        <option value="Net Surfing">
+                                        <option value="Badmiton">
+                                        <option value="Table Tennis">
+                                        <option value="Cricket">
+                                        <option value="Golf">
+                                    </datalist>
+                                </span>
+                            </li>
+                            <li class="clearBlock"><button class="cta-btn" type="submit">Submit</button></li>
+                        </ul>
+                    </form>
+                </article>
+            </section>
+        </main>    
+        <!-- Code Ends -->
+    </body>
+
+    <script src="js/default.js"></script>
+
+</html>
