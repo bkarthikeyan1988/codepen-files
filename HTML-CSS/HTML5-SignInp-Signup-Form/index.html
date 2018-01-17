@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Signin & SignUpform</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Code Starts -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<main>
+        <h2 class="title">Enter the system</h2>
+        <p class="desc">It is neccessary to login in Your account in order to sign up for a course.</p>
+        
+        <section class="ele-table form-block">
+            <article class="ele-row">
+                <div class="ele-cell sign-up">
+                    <h3 class="signup-title">Are you new? <span>Register</span></h3>
+                    <form name="sign-up">
+                        <ul>
+                            <li><input class="input-field" type="text" placeholder="User name" required></li>
+                            <li><input class="input-field" type="email" placeholder="Email" required></li>
+                            <li><input class="input-field" type="password" placeholder="Password" required></li>
+                            <li><input class="input-field" type="password" placeholder="Confirm Password" required></li>
+                            <li><button class="signup-btn">Register</button></li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- Sign Up Ends -->
+                <div class="ele-cell sign-in">
+                    <h3 class="signin-title">Already a student? Login</h3>
+                    <form name="sign-in">
+                        <ul>
+                            <li><input class="input-field" type="text" placeholder="User name" required></li>
+                            <li><input class="input-field" type="password" placeholder="Password" required></li>
+                            <li class="clearBlock">
+                                <div class="check-box-block">
+                                    <input type="checkbox" id="remember-me" name="rmbrMe">
+                                    <label for="remember-me">Remember me?</label>
+                                </div>
+                                <div class="login-btn-block">
+                                    <button class="login-btn">Login</button>
+                                    <p><a href="javascript:void(0);">Forgot Password?</a></p>
+                                </div> 
+                            </li>
+                        </ul>
+                    </form>
+                </div>
+                <!-- Sign In Ends -->
+            </article>
+        </section>
+    </main>
+    <!-- Code Ends -->
+</body>
+<script src="js/default.js"></script>
+</html>

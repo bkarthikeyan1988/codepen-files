@@ -1,0 +1,94 @@
+body {
+  background: #455A64; }
+
+*,
+*:before,
+*:after {
+  transition: all 300ms ease; }
+
+div > div {
+  float: left;
+  padding: 5rem; }
+
+input {
+  display: none; }
+
+label {
+  display: block;
+  width: 5rem;
+  height: 3.5rem;
+  position: relative; }
+  label span {
+    position: relative;
+    top: 1.5rem; }
+    label span, label span:before, label span:after {
+      display: block;
+      background: #CFD8DC;
+      width: 5rem;
+      height: 0.5rem;
+      border-radius: 0.25rem; }
+    label span:before, label span:after {
+      content: '';
+      position: absolute; }
+    label span:before {
+      bottom: 1.5rem; }
+    label span:after {
+      top: 1.5rem; }
+    .left label span:before, .top label span:before, .bottom label span:before {
+      transform-origin: top left; }
+    .left label span:after, .top label span:after, .bottom label span:after {
+      transform-origin: bottom left; }
+    .right label span:before {
+      transform-origin: top right;
+      right: 0; }
+    .right label span:after {
+      transform-origin: bottom right;
+      right: 0; }
+    .to-arrow :checked ~ label span:before, .to-arrow :checked ~ label span:after {
+      width: 60%; }
+    .to-arrow :checked ~ label span:before {
+      bottom: -0.125rem; }
+    .to-arrow :checked ~ label span:after {
+      top: -0.125rem; }
+    .left :checked ~ label span:before, .top :checked ~ label span:before, .bottom :checked ~ label span:before {
+      transform: rotate(-40deg); }
+    .left :checked ~ label span:after, .top :checked ~ label span:after, .bottom :checked ~ label span:after {
+      transform: rotate(40deg); }
+    .right :checked ~ label span:before {
+      transform: rotate(40deg); }
+    .right :checked ~ label span:after {
+      transform: rotate(-40deg); }
+    .top :checked ~ label span {
+      transform: rotate(90deg); }
+    .bottom :checked ~ label span {
+      transform: rotate(-90deg); }
+    .x :checked ~ label span {
+      width: 0; }
+      .x :checked ~ label span:before {
+        transform: rotate(45deg);
+        bottom: 0; }
+      .x :checked ~ label span:after {
+        transform: rotate(-45deg);
+        top: 0; }
+    .x1 :checked ~ label span {
+      background: none; }
+      .x1 :checked ~ label span:before {
+        animation: x1Before 500ms forwards; }
+      .x1 :checked ~ label span:after {
+        animation: x1After 500ms forwards; }
+@keyframes x1Before {
+  50% {
+    bottom: 0;
+    transform: rotate(0deg); }
+  100% {
+    bottom: 0;
+    transform: rotate(45deg); } }
+@keyframes x1After {
+  50% {
+    top: 0;
+    transform: rotate(0deg); }
+  100% {
+    top: 0;
+    transform: rotate(-45deg); } }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>GEO Location</title>
+    
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+  <!-- Code Starts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"> </script>
+  <script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=true"></script>
+
+  <section class="container geo-location">
+    <h2 class="title">HTML5 Geo Location</h2>
+    <button class="loacate-btn" id="get-location-btn"><span>Get Location</span></button>
+    <section class="geo-main-content">
+      <article class="position-address">
+        <p>Lat/Long: <span id="location-lat-long"></span></p>
+        <p>Address: <span id="location-address"></span></p>
+      </article>
+      <article class="map-block">
+        <h4>Map:</h4>
+        <div id="map-container" style="height: 400px;"></div>
+      </article>
+    </section>
+  </section>
+  <!-- Code Ends -->
+  <script src="js/default.js"></script>
+</body>
+</html>

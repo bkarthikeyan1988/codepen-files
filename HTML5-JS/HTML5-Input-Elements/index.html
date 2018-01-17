@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Input Elements</title>
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <!-- Code Starts -->
+ <form id="the-form">
+<div>
+    <h3>type="color"</h3>
+    <input type="color" name="color">
+</div>
+
+<div>
+    <h3>type="date"</h3>
+    <input type="date" name="date">
+</div>
+
+<div>
+    <h3>type="datetime"</h3>
+    <input type="datetime" name="datetime">
+</div>
+
+<div>
+    <h3>type="datetime-local"</h3>
+    <input type="datetime-local" name="datetime-local">
+</div>
+
+<div>
+    <h3>type="email"</h3>
+    <input type="email" name="email">
+</div>
+
+<div>
+    <h3>type="month"</h3>
+    <input type="month" name="month">
+</div>
+
+<div>
+    <h3>type="number"</h3>
+    <input type="number" name="number">
+</div>
+
+<div>
+    <h3>type="search"</h3>
+    <input type="search" name="search" results="5" autosave="saved-searches">
+</div>
+
+<div>
+    <h3>type="tel"</h3>
+    <input type="tel" name="tel">
+</div>
+
+<div>
+    <h3>type="time"</h3>
+    <input type="time" name="time">
+</div>
+
+<div>
+    <h3>type="url"</h3>
+    <input type="url" name="url">
+</div>
+
+<div>
+    <h3>type="week"</h3>
+    <input type="week" name="week">
+</div>
+
+<div>
+    <h3>Datalist</h3>
+    <input type="text" name="characters" list="data-list">
+    <datalist id="data-list">
+        <option value="Hugo Reyes">
+        <option value="Jack Shephard">
+        <option value="James 'Sawyer' Ford">
+        <option value="John Locke">
+        <option value="Sayid Jarrah">
+    </datalist>
+</div>
+
+<div>
+    <h3>Keygen</h3>
+    <keygen name="key"></keygen>
+</div>
+
+<div>
+    <h3>Meter</h3>
+    <meter min="0" max="10" value="7"></meter>
+</div>
+
+<div>
+    <h3>Output</h3>
+    <p>If input type="range" and the oninput event on forms are supported in your web browser, slide the range below to see the value in the output element.</p>
+    <input type="range" id="range" name="range">
+    <output for="range" id="output"></output>
+</div>
+
+<div>
+    <h3>Progress</h3>
+    <progress max="100" value="70">70%</progress>
+</div>
+
+<div>
+    <input type="submit" value="Send">
+</div>
+</form>
+    <!-- Code Ends -->
+    <script src="js/default.js"></script>
+</body>
+</html>

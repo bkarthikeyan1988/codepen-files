@@ -1,0 +1,10 @@
+.geo-location{background: #f2f2f2 none repeat scroll 0 0;border-radius: 3px;box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;font: 15px arial;margin: 30px auto;outline: medium none;padding: 15px;width: 1000px; position: relative;}
+.geo-location:before, .geo-location:after{content:"";position:absolute;z-index:-1;box-shadow:0 0 20px rgba(0,0,0,0.8);top:10px;bottom:10px;left:0;right:0;border-radius:100px / 10px;} 
+.geo-location:after{right:10px;left:auto;transform:skew(8deg) rotate(3deg);}
+.position-address p,.map-block p{font-weight:bold; min-height:50px; margin:0 0 15px;}
+.position-address p span{display: block;font: 13px/18px arial;margin: 15px 0;}
+.loacate-btn{background:#343436; border-radius:2px; border:0; padding:10px 15px; margin:25px 0 0; color:#fff; font-size:16px; cursor:pointer; outline:none; }
+.geo-main-content{display:table; border:2px solid #333; table-layout:fixed; width:100%; margin:30px auto 0;}
+.position-address,.map-block{display:table-cell; vertical-align:top; border-right:2px solid #333; padding:15px; width:30%;}
+.map-block{width:70%; border-right:0;}
+.map-block h4{margin-bottom: 15px;}

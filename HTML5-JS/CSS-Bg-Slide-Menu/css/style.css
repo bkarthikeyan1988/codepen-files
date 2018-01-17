@@ -1,0 +1,92 @@
+body {
+   font-family:sans-serif;
+   text-align:center;
+}
+.menu {
+   font-size:0;
+}
+ul, li {
+   margin:0;
+   padding:0;
+ }
+.menu {
+  position:relative;
+  overflow:hidden;
+  display:inline-block;
+  white-space:nowrap;
+  border-top:1px solid rgba(255, 99, 71, 0.4);
+  border-bottom:1px solid rgba(255, 99, 71, 0.4);
+}
+.menu > li {
+  font-size:16px;
+  position:relative;
+  z-index:1;
+  display:inline-block;
+  line-height:2em;
+  height:2em;
+  width:5em;
+}
+.menu > li > a:link,
+.menu > li > a:visited {
+  color:#555;
+  text-decoration:none;
+  display:block;
+  padding:0 1em;
+}
+.menu > li:last-child {
+  position:absolute;
+  z-index:0;
+  height:2em;
+  width:5em;
+  background:rgba(255, 99, 71, 0.4);
+  bottom:0;
+  left:-5em;
+  transition:transform .3s;
+}
+.menu .selected {
+  position:relative;
+}
+.menu .selected a:link,
+.menu .selected a:visited {
+  color:#fff;
+}
+.menu .selected::after {
+  content: "";
+  position:absolute;
+  z-index:-1;
+  background:rgba(255, 99, 71, 0.6);
+  height:2em;
+  width:5em;
+  top:0;
+  left:0;
+}
+
+
+.menu li:nth-child(1):hover ~ li:last-child    {transform:translateX(5em) !important;}
+.menu li:nth-child(1).selected ~ li:last-child {transform:translateX(5em);}
+
+.menu li:nth-child(2):hover ~ li:last-child    {transform:translateX(10em) !important;}
+.menu li:nth-child(2).selected ~ li:last-child {transform:translateX(10em);}
+
+.menu li:nth-child(3):hover ~ li:last-child    {transform:translateX(15em) !important;}
+.menu li:nth-child(3).selected ~ li:last-child {transform:translateX(15em);}
+
+.menu li:nth-child(4):hover ~ li:last-child    {transform:translateX(20em) !important;}
+.menu li:nth-child(4).selected ~ li:last-child {transform:translateX(20em);}
+
+.menu li:nth-child(5):hover ~ li:last-child    {transform:translateX(25em) !important;}
+.menu li:nth-child(5).selected ~ li:last-child {transform:translateX(25em);}
+
+.menu li:nth-child(6):hover ~ li:last-child    {transform:translateX(30em) !important;}
+.menu li:nth-child(6).selected ~ li:last-child {transform:translateX(30em);}
+
+.menu li:nth-child(7):hover ~ li:last-child    {transform:translateX(35em) !important;}
+.menu li:nth-child(7).selected ~ li:last-child {transform:translateX(35em);}
+
+.menu li:nth-child(8):hover ~ li:last-child    {transform:translateX(40em) !important;}
+.menu li:nth-child(8).selected ~ li:last-child {transform:translateX(40em);}
+
+.menu li:nth-child(9):hover ~ li:last-child    {transform:translateX(45em) !important;}
+.menu li:nth-child(9).selected ~ li:last-child {transform:translateX(45em);}
+
+

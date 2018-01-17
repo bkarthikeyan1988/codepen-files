@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moving Border Menu</title>
+
+	<link rel="stylesheet" href="css/style.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+</head>
+<body>
+    <!-- Code Starts --> 
+    <ul class="clearfix">
+        <li><a href="javascript:void(0)">Accueil</a></li>
+        <li class="current"><a href="javascript:void(0)">Votre CPA</a></li>
+        <li><a href="javascript:void(0)">Services Offerts</a></li>
+        <li><a href="javascript:void(0)">Spécialité Garderie</a></li>
+        <li><a href="javascript:void(0)">514 481 3600</a></li>
+        <div id="marker"></div>
+    </ul>
+    <div id="body" style="height:100px; background-color:lightgrey; margin: 2em 4em; padding: 2em">This demo works down to IE8 so far, using css3 animations for capable browsers and reverting to jQuery.animate() for IE and the likes, using Modernizr to detect support for transitions. <br/><br/>
+    You are actually using <span class="detect"></span>
+    </div>
+
+    <!-- Code Ends -->
+	<script src="js/default.js"></script>
+</body>
+</html>

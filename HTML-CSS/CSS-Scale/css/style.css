@@ -1,0 +1,27 @@
+html{background:#c5ccd0;}
+body{margin:0 auto; padding:0; background: none; font-family:"UniversforKPMG", helvetica, arial; font-size: 16px;}
+body main{max-width: 1280px; background: #fff; margin: 0 auto; overflow: hidden;}
+*{padding:0;margin:0;outline:0;text-shadow:0}
+button, a, :hover, :focus{outline:none; -webkit-appearance:none;}
+a{text-decoration:none;outline:0}
+a:hover{text-decoration:none;}
+a label,a span{cursor:pointer}
+li{list-style:none}
+h1,h2,h3,h4,h5,h6{margin: 0;}
+
+/* Ruler */
+	.overall-ruler{/*position: absolute;bottom: -30px;width: 100%;*/}
+	.overall-ruler ul, .revenue-ruler ul{display: block;overflow: hidden;width: 100%;counter-reset: section -1;}
+	.overall-ruler li{width: 2.5%;color: #000;float: left;position:relative;height:35px;}
+.overall-ruler li:before, .revenue-ruler li:before{border-left: 2px solid #000;content:"";}
+	.overall-ruler li:nth-child(4n + 1)::after {counter-increment: section 10;content: counter(section);font-size:16px;}
+.overall-ruler li:nth-child(4n + 1)::before{font-size: 11px;position: relative;top: 1px;}
+
+.overall-ruler li:first-child::after {counter-increment: section;content: counter(section);}
+.revenue-ruler li{width: 10%;color: #000;float: left;position:relative; height:35px;}
+.revenue-ruler li::before{font-size:11px;position:relative; top:2px}
+.revenue-ruler li:nth-child(1n)::after {counter-increment: section 10;content: counter(section);font-size:16px;}
+.revenue-ruler li:first-child::after {counter-increment: section;content: counter(section);}
+.overall-ruler li::after,.revenue-ruler li::after{position:absolute; bottom:-3px; left:-8px; z-index:2;}
+.overall-ruler li:first-child:before,.revenue-ruler li:first-child:before{border:0;}
+/* Ruler Ends */

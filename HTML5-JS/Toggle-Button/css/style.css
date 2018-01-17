@@ -1,0 +1,21 @@
+*{padding:0; margin:0;}
+.block{margin: 30px auto; width:200px; background: #f5f5f5;box-shadow:1px 1px 1px 0px rgba(0,0,0,0.3); padding: 15px;}
+    .block h3{font:bold 15px arial; color: #5d5c5c; margin-bottom: 15px;}
+    button.like-btn {
+        background-color: #009fda;
+        border: 2px solid orange;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 80px;
+        text-align: cemter;
+        font:normal 15px arial; color: #333;
+        padding: 5px 15px;
+        color: #fff;
+        outline: none;
+        margin: 0 auto;
+        display: block;
+    }
+
+    button.unliked {
+      background: orange;
+    }
