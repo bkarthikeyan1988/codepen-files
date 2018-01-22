@@ -1,0 +1,37 @@
+
+@mixin respond($media) {
+  // @if $media == portrait-phones {
+  //   @media only screen and (max-width: $min-device-width) { @content; } //
+  // }
+  // @else if $media == landscape-phones {
+  //   @media only screen and (min-width: $min-landscape-width) and (max-width: breakpoint($tablet-device-width)) { @content; } // 480 to 763
+  // }
+  @if $media == portrait-small {
+    @media only screen and (max-width: breakpoint($medium-min-width)) and (orientation: portrait) { @content; }
+  }
+  @else if $media == landscape-small {
+    @media only screen and (max-width: breakpoint($medium-min-width)) and (orientation: landscape) { @content; }
+  } 
+  @else if $media == small {
+    @media only screen and (max-width: breakpoint($medium-min-width)) { @content; }
+  }
+  @else if $media == portrait-medium {
+    @media only screen and (min-width: $meedium-min-width) and (max-width: breakpoint($medium-width)) { @content; }
+  }
+  @else if $media == landscape-medium {
+    @media only screen and (min-width: $medium-min-width) and (orientation: landscape) {
+      @content; }
+  }
+  @else if $media == medium {
+    @media only screen and (min-width: $medium-min-width) and (max-width: $medium-width) { @content; }
+  }
+  @else if $media == document-width {
+    @media only screen and (min-width: breakpoint($document-width)) { @content; }
+  }
+  @else if $media == print {
+    @media print { @content; }
+  }
+  @else {
+    @media only screen and ($media) { @content; }
+  }
+}

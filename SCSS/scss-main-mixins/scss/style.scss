@@ -1,0 +1,114 @@
+@import 'base/base';
+
+// Styles for Mixin Examples
+body {
+    // For the Use of functions and Variables
+    font: normal rem(14) $defaultFont;
+    line-height: $default;
+    margin: 16px;
+}
+
+.container {
+    margin: $margin-auto;
+    width: 100%;
+    max-width: rem(1280);
+    border: 1px solid $lightBlack;
+    height: 100%;
+    padding: rem(16);
+}
+
+// Outer Box Shadow Mixin Example
+.outerBoxShadow {
+    @include box-shadow(1px, 1px, 1px, 1px, rgba(0,0,0,0.3));
+    padding: rem(8);
+    margin: rem(16) 0;
+    border: 1px solid $lightBlack;
+}
+
+// Inner Box Shadow Mixin Example
+.innerBoxShadow {
+    @include inner-box-shadow(inset, 0, 0, 2px, 2px, rgba(0,0,0,0.3));
+    padding: rem(8);
+    margin: rem(16) 0;
+}
+
+// Border Radius Example
+.borderRadiusExample {
+    padding: rem(16);
+    margin-top: rem(16);
+    @include border-radius(5px);
+    border: 1px solid $lightBlack;
+    margin-bottom: 16px;
+
+    & .item {
+        padding: rem(8);
+        border: 1px solid $lightBlack;
+        display: inline-block;
+        width: 24%;
+        
+        &.item1 {
+            @include border-radius-specific(5px, 0, 0, 0)
+        }
+
+        &.item2 {
+            @include border-radius-specific(0, 5px, 0, 0)
+        }
+
+        &.item3 {
+            @include border-radius-specific(0, 0, 5px, 0)
+        }
+
+        &.item4 {
+            @include border-radius-specific(0, 0, 0, 5px)
+        }
+    }
+}
+
+// Arrow Example
+.arrowBoxBlock {
+    display: block;
+    overflow: hidden;
+}
+.arrowBox{
+    width: 100px;
+    height: 100px;
+    margin-top: 8px;
+    border: 1px solid $black;
+    position: relative;
+    padding: 8px;
+    margin: 16px;
+    float: left;
+
+    &.top:before {
+        @include arrow(top, $black, 10px);
+    }
+
+    &.right:before {
+        @include arrow(right, $black, 10px);
+    }
+    
+    &.bottom:before {
+        @include arrow(bottom, $black, 10px);
+    }
+    
+    &.left:before {
+        @include arrow(left, $black, 10px);
+    }
+
+    &.top-left:before {
+        @include arrow(top-left, $black, 10px);
+    }
+
+    &.top-right:before {
+        @include arrow(top-right, $black, 10px);
+    }
+    
+    &.bottom-right:before {
+        @include arrow(bottom-right, $black, 10px);
+    }
+    
+    &.bottom-left:before {
+        @include arrow(bottom-left, $black, 10px);
+    }
+    
+}

@@ -1,0 +1,86 @@
+@mixin arrow($direction, $color, $size){
+    display: block;
+    height: 0;
+    width: 0;
+    content: ''; // if it is not applied within pseudo elements
+    position: absolute; //Make sure for the parent tag POSITION: Relative is applied or remove of not needed
+
+    @if $direction == 'top' {
+        border-left: $size solid transparent;
+    	border-right: $size solid transparent;
+        border-bottom: $size solid $color;
+        top: -$size;
+    } @else if $direction == 'right' {
+        border-top: $size solid transparent;
+        border-bottom: $size solid transparent;
+        border-left: $size solid $color;
+        right: -$size;
+    } @else if $direction == 'bottom' {
+        border-top: $size solid $color;
+        border-right: $size solid transparent;
+        border-left: $size solid transparent;
+        bottom: -$size;
+    } @else if $direction == 'left' {
+        border-top: $size solid transparent;
+    	border-right: $size solid $color;
+        border-bottom: $size solid transparent;
+        left: -$size;
+    } @else if $direction == 'top-left' {
+        border-top: $size solid $color;
+        border-right: $size solid transparent;
+        top:0;
+        left: 0;
+    } @else if $direction == 'top-right' {
+        border-top: $size solid $color;
+        border-left: $size solid transparent;
+        top:0;
+        right: 0;
+    } @else if $direction == 'bottom-left' {
+        border-bottom: $size solid $color;
+        border-right: $size solid transparent;
+        bottom: 0;
+        left: 0;
+    } @else if $direction == 'bottom-right' {
+        border-bottom: $size solid $color;
+        border-left: $size solid transparent;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@mixin reset(){
+    padding: 0;
+    margin: 0;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@mixin border-radius-specific($radius1, $radius2, $radius3, $radius4) {
+  -webkit-border-radius: $radius1 $radius2 $radius3 $radius4;
+     -moz-border-radius: $radius1 $radius2 $radius3 $radius4;
+      -ms-border-radius: $radius1 $radius2 $radius3 $radius4;
+       -o-border-radius: $radius1 $radius2 $radius3 $radius4;
+          border-radius: $radius1 $radius2 $radius3 $radius4;
+}
+
+@mixin box-shadow($v-set, $v-hori, $v-vert, $v-blur-radius, $color){
+  -o-box-shadow: $v-set $v-hori $v-vert $v-blur-radius $color;
+  -ms-box-shadow: $v-set $v-hori $v-vert $v-blur-radius $color;
+  -webkit-box-shadow: $v-set $v-hori $v-vert $v-blur-radius $color;
+  -moz-box-shadow: $v-set $v-hori $v-vert $v-blur-radius $color;
+  box-shadow: $v-set $v-hori $v-vert $v-blur-radius $color;
+}
+
+@mixin inner-box-shadow($shadow-pos, $v-set, $v-hori, $v-vert, $v-blur-radius, $color){
+  -o-box-shadow: $shadow-pos $v-set $v-hori $v-vert $v-blur-radius $color;
+  -ms-box-shadow: $shadow-pos $v-set $v-hori $v-vert $v-blur-radius $color;
+  -webkit-box-shadow: $shadow-pos $v-set $v-hori $v-vert $v-blur-radius $color;
+  -moz-box-shadow: $shadow-pos $v-set $v-hori $v-vert $v-blur-radius $color;
+  box-shadow: $shadow-pos $v-set $v-hori $v-vert $v-blur-radius $color;
+}

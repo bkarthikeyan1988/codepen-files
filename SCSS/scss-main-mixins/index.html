@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main SCSS Mixins</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Code Starts --> 
+  <div class="container">
+    <!-- Responsive Examples -->
+    <h4 class="visibleLg">Media Query Example to Show Large screen Content</h4>
+    <h4 class="visibleMd">Media Query Example to Show Medium screen Content</h4>
+    <h4 class="visibleSm">Media Query Example to Show Small screen Content</h4>
+
+    <!-- Outer Box Shadow Example -->
+    <div class="outerBoxShadow">
+        Outer Box Shadow Mixin Example: box-shadow($v-set, $v-hori, $v-vert, $v-blur-radius, $color)
+    </div>
+    
+    <!-- Inner Box Shadow Example -->
+    <div class="innerBoxShadow">
+        Inner Box Shadow Mixin Example: inset-box-shadow($shadow-pos, $v-set, $v-hori, $v-vert, $v-blur-radius, $color)
+    </div>
+
+    <!-- Border radius and Spcific Border Radius Example -->
+    <h4>border-radius($radius) & border-radius-specific($radius1, $radius2, $radius3, $radius4)</h4>
+    <ul class="borderRadiusExample">
+        <li class="item item1">Top Left</li>
+        <li class="item item2">Top Right</li>
+        <li class="item item3">Bottom Right</li>
+        <li class="item item4">Bottom Left</li>
+    </ul>
+    <!-- Arrow Mixin -->
+    <h4>arrow($direction, $color, $size)</h4>
+    <ul class="arrowBoxBlock">
+        <li class="arrowBox top">Top Arrow</li>
+        <li class="arrowBox right">Right Arrow</li>
+        <li class="arrowBox bottom">Bottom Arrow</li>
+        <li class="arrowBox left">Left Arrow</li>
+        <li class="arrowBox top-left">Top Left Arrow</li>
+        <li class="arrowBox top-right">Top Right Arrow</li>
+        <li class="arrowBox bottom-left">Bottom Left Arrow</li>
+        <li class="arrowBox bottom-right">Bottom Right Arrow</li>
+    </ul>
+  </div>
+
+  
+  <!-- Code Ends -->
+</body>
+</html>

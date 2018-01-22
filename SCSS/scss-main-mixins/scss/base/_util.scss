@@ -1,0 +1,70 @@
+/* Util css like pull-left */
+
+*{
+  @include reset;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-appearance: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+*:focus
+{
+    outline: none;
+    -webkit-appearance: none;
+}
+
+/* Small breakpoints */
+@include respond(small) {
+  .visibleMd{display:none}
+  .visibleLg{display:none}
+  .hiddenSm{display:none}
+  .visibleSm {display: block}
+}
+/* Medium breakpoints */
+@include respond(medium) {
+  .visibleSm{display:none}
+  .visibleLg{display:none}
+  .hiddenMd{display:none}
+}
+/* Large breakpoints */
+@include respond(document-width) {
+  .visibleSm{display:none}
+  .visibleMd{display:none}
+  .hiddenLg{display:none}
+}
+// Align Properties
+.alignLeft {
+  text-align: left;
+}
+.alignCenter {
+  text-align: center;
+}
+.alignRight, .textRight {
+  text-align: right;
+}
+.alignTop {
+  vertical-align: top;
+}
+.alignMiddle {
+  vertical-align: middle;
+}
+.alignBottom {
+  vertical-align: bottom;
+}
+
+// Position
+.posRel {
+  position: relative;
+}
+
+// Clear
+.clearBlock {
+  overflow: hidden;
+}
+
+// Image
+.imgResponsive {
+  max-width: 100%;
+  height: auto;
+}
