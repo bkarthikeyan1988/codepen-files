@@ -1,6 +1,8 @@
 <!---- Info About Folders Files and Images ---->
 
-- All files are my learning from other sites, codepen and other articles.
+- Most of the files/code are my learning from other sites, codepen and other articles.
+
+- Some of my own POC stuff I learned while working on the project.
 
 - This whole project is all about like mini stack for my front end learnings.
 
@@ -9,4 +11,4 @@
 - My codepen url where I create, I forked the projects/Learnings.
 https://codepen.io/bkarthikeyan_bk/
 
-- All this project files are the contents from my own code pen learnings and the forked one while I am learning from other peoples.
+- All this project files are from the contents from my code pen learnings code and the forked one while I am learning from other peoples.
