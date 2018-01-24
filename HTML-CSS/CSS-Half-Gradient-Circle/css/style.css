@@ -1,0 +1,42 @@
+div.gradient {
+  height: 200px;
+  width:200px; 
+  border-radius:50%;
+  z-index:2;
+  position:relative;
+  background-color: green;
+  background-image:
+    linear-gradient(
+      to right, 
+      green, red
+    );
+}
+.block{position:relative; width:200px; height:100px; overflow:hidden; }
+.whiteCircle{  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -60%;
+  margin: 0 0 0 -60px;
+  z-index: 3;
+  background: #fff;}
+.blackCircle{  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  bottom: -40%;
+  margin: 0 0 0 -40px;
+  z-index: 4;
+  background: #000;}
+.borderLeft{  width: 48px;
+  height: 3px;
+  background: green;
+  position: absolute;
+  left: 0;}
+.borderRight{  width: 48px;
+  height: 3px;
+  background: red;
+  position: absolute;
+  left: 168px;}
